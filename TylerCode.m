@@ -123,10 +123,13 @@ plot(RmaxWL,RmaxPlot)
 hold on
 plot(RmaxWL,70*ones(1,length(RmaxWL)))
 plot(RmaxWL,100*ones(1,length(RmaxWL)))
+hold off
 ylabel('Range (m)')
 yyaxis right
 plot(RmaxWL,CL_LDmaxPlot)
+hold on
 plot(RmaxWL,CLlim*ones(1,length(RmaxWL)))
+hold off
 xlabel('Wing Loading (N/m^2)')
 ylabel('Coefficient of Lift Required')
 title('Maximum Range vs Wing Loading')
@@ -141,6 +144,7 @@ ylabel('Endurance (s)')
 yyaxis right
 plot(EmaxWL,CL_PRminPlot)
 plot(EmaxWL,CLlim*ones(1,length(EmaxWL)))
+hold off
 title('Maximum Endurance vs Wing Loading')
 xlabel('Wing Loading (N/m^2)')
 ylabel('Coefficient of Lift Required')
@@ -150,6 +154,7 @@ figure(3)
 plot(EmaxWL,vEmaxPlot)
 hold on
 plot(RmaxWL,vRmaxPlot)
+hold off
 title('Velocity Required for Maximum Range and Endurance')
 xlabel('Wing Loading (N/m^2)')
 ylabel('Required Velocity (m/s)')

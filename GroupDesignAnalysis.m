@@ -19,13 +19,13 @@ g       = 9.81;                                                            % Acc
 
 % Design properties
 h        = 7;                                                              % Initial launch height[m]
-b        = nan;                                                            % Wing span [m]
-AR       = nan;                                                            % Aspect ratio
+b        = .98;                                                            % Wing span [m]
+c        = nan;                                                            % Chord of wing [m]
+AR       = 6;                                                            % Aspect ratio
 Swet     = nan;                                                            % Wetted area [m^2]
-Sref     = nan;                                                            % Wing planform area [m^2]
+Sref     = 2 * c * b;                                                            % Wing planform area [m^2]
 Srest    = nan;                                                            % Surface area of fuselage and tail [m^2]
 Sh       = nan;                                                            % Planform area of horizontal tail [m^2]
-c        = nan;                                                            % Chord of wing [m]
 cBar     = Sref / b;                                                       % Mean aerodynamic chord [m]
 cr       = nan;                                                            % Root chord [m]
 ct       = nan;                                                            % Tip chord [m]
